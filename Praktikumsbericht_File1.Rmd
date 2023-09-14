@@ -1,12 +1,21 @@
 ---
 title: "Praktikumsbericht"
-output: pdf_document
+author: "Caren Ortgies"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-author: "Caren Ortgies" 
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+  word_document: default
 geometry: margin= 1.0in
 font-size: 12pt
 ---
 
+```{r data, include=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+```
 
 
 
@@ -27,10 +36,43 @@ library(tinytex)
 ```
 
 ## Bewerbungsphase
-Im Januar 2023 habe ich verschiedene Berwerbungen geschrieben, da ich mein Prkatikum in den kommenden Semseterferien absolvieren wollte. Dabei habe ich mir unterschiedliche Unternehmen, Vereine und Institutionen herausgesucht, bei denen ich mir das Prkatikum vorstellen konnte. Dies waren Forschungsinstitute wie das kriminologische Forschungsinstitut Niedersachsen oder das DZHW; Vereine, die politische Bildung betreiben wie der Verien Politik zum Anfassen e.V.; Stiftungen wie die Friedrich Ebert Stiftung; aber auch Parteien wie bei der Grünen Niedersachsen. Nachdem ich bei zwei Adressen ein Vorstellungsgespräch hatte, entschied ich mich am Ende für das DZHW, da ich mich sehr für den Alltag in der Forschung interessiere und auch Skills in der quantitativen Sozialforschung erlernen wollte, was mir beim DZHW angeboten wurde. Außerdem wurde mir eine monatliche Aufwandsentschädigung angeboten, welches ich auch positiv bewertete. 
+
+Im Januar 2023 begann ich mit der Praktikumssuche, da mein Prkatikum in den kommenden Semseterferien stattfinden sollte. Dabei habe ich mir unterschiedliche Unternehmen, Vereine und Institutionen herausgesucht, bei denen ich mir das Prkatikum vorstellen konnte. Dies waren Forschungsinstitute wie das kriminologische Forschungsinstitut Niedersachsen oder das DZHW; Vereine, die politische Bildung betreiben wie der Verein Politik zum Anfassen e.V.; Stiftungen wie die Friedrich Ebert Stiftung; aber auch Parteien. 
+
+Nachdem ich bei zwei Adressen ein Vorstellungsgespräch hatte, beim DZHW und bei dem Verein Politik zum Anfassen e. V..Die beiden Vorstellungsgespräche fanden beide online statt. Während der Gespräche wurde ich zu meinen Vorstellungen im Praktikum befragt und zu meinen Interessen im Studium und wie ich auf das Institut bzw. den Verein aufmerksam geworden bin. Bei dem Verein hätte ich zwei mal im Monat ein Planspiel zum Thema Demokratie in Schulen in ganz Deutschland mit durchgeführt. Außerdem wäre mein Aufgabenbereich gewesen neue Menschen einzuarbeiten und anzuleiten, die bei dem Verein ein FSJ machen. Außerdem wäre die Bedingung gewesen, dass ich mindestens ein drei Monate langes Praktikum dort absolviere. Bei dem Vorstellungsgespräch mit dem DZHW wurde mein Aufgabenbereich so beschrieben, dass ich hauptsächlich Herr Hückstädt in seiner Fprschungstätigkeit unterstütze und nebenbei noch Grundlagen der quantitativen Forschng erlerne mit der Programmiersprache R. Nach den beiden Gesprächen sollte ich mich bei beiden Adressen ein paar Tage später melden, ob ich mir das Praktikum beim DZHW bzw. bei Politik zum Anfassen e.V. noch immer vorstellen konnte.
+
+Am Ende entschied ich mich für das DZHW, da ich Einblicke in den Forschungsalltag gewinnen wollte und darüberhinaus Skills in der quantitativen Sozialforschung erlernen wollte, was mir beim DZHW angeboten wurde. Außerdem wurde mir eine monatliche Aufwandsentschädigung angeboten, welches ich auch positiv bewertete. Danach wurde mir ein Praktikumsvertrag zugeschickt, welchen ich unterschrieb. 
 
 ## Vorstellung DZHW
+
+Das DZHW (Deutsches Zentrum für Hochschul- und Wissenschaftsforschung) ist ein Forschungsinstitut mit Sitz in Hannover und Berlin, welches empirische Forschung im Bereich des Hochschul- und Wissenschaftssystems betreibt.Es wird durch Bund und Länder gefördert. Das Institut selbst versteht sich als Partner und Dienstleister der Wissenschaft und Wissenschaftspolitik, welches seine Forschungsergebnisse in den wissenschaftlichen Diskurs einbringt. Außerdem unterstützt das DZHW mit seinen Daten und Analysen Politk, Hochschulen und Bildungsadministration bei der Gestaltung der hochschulischen Bildung in Deutschland und Europa. Es existieren vier Fachabteilungen im DZHW. 
+
 ## Tätigkeiten im Praktikum 
+
+Das Praktikum fand ausschließlich im Homeoffice statt, da es für das DZHW einfacher war dies so für zwei Monate zu organisieren. Sonst hätte mir ein eigener Laptop und eine eigene E-Mailadresse vom DZHW gestellt werden müssen. Ich habe hauptsächlich mit Herrn Dr. des. Hückstädt zusammengearbeitet, welcher mich auch während meines Praktikums betreut hat. Herr Hückstädt forscht zu Forschungskooperationen und Forschungsverbünden. Er interessiert sich für die Zusammenarbeit von Forschungskooperationen und Verbünden und auch inwieweit diszilinübergreifend in der Scientific Community geforscht wird und welche Erfolgschancen diese Kooperationen haben bzw. unter welchen Bedingungen sie erfolgreich sind. 
+
+Für Herrn Hückstädt habe ich einige Rechercheaufgaben übernommen im Rahmen eines neuen Forschungsantrags zur weiterführenden Forschung an Erfolgsbedingungen für Forschungsverbünde. Außerdem habe ich diesen Antrag und auch noch weitere Artikel für Herrn Hückstädt korrigiert. Diese Aufgaben konnte ich gut bewältigen, da sie sehr nah an dem Unialltag liegen. Es war sehr spannend zu verfolgen wie ein Forschungsantrag zustande kommt. 
+Ein anderer Aufgabenbereich meines Praktikums war es, Online-Kurse zu der Programmiersprache und Entwicklungsumgebung R für statistische Analysen zu absolvieren. Diese Online-Kurse wurden von Datacamp angeboten, wo ich die Linzenz vom DZHW benutzen durfte. Ich habe verschiedene Kurse absolviert, z.B. eine Einführung in die Regressionsanalyse mit R oder eine Einfürhung in die Datenvisualisierueng und -maipulation mit R. Für jeden absolvierten Kurs konnte ich mir ein Zetrifikat ausstellen lassen. Mir wurde frei überlassen, wann und wie ich diese Kurse absolvieren wollte. Außerdem konnte ich mir noch Kurse in meinem Interessensbereich aussuchen, die ich am Ende des Praktikums noch absolvieren konnte. 
+
+Eine weitere spannende Aufgabe war es Herrn Hückstädt bei einem anstehenden Artikel zu unterstützen, dieses mal aber nicht in Form von einer Rechereche oder Korrekturarbeit, sondern in Form einer eigenen Netzwerkanalyse in R. Der Artikel soll von disziplinübergreifenden Forschungskooperationen handeln und welches Fachgebiet am meisten mit anderen kooperriert. Dabei wurde die Einteilung der DFG-Fachsystematik der Wissenschaftsbereiche genutzt, in der z.B. Fachkollegien wie Theologie oder Philosophie dem Fachgebiet der Geisteswissenschaften zugeordnet werden. Meine Aufgabe war es nun zum Einen eine neue Spalte in einen vorhandenen Datensatz zu kreieren und daraus einen neuen Datensatz zu erstellen. Mithilfe dieses Codes entstand dann ein Datensatz, wo die Spalte **from_wissenschaftsbereich** eingefügt wurde. In einem zweiten Schritt sollte ich dann eine eigene Netzwerkanalyse anfertigen, in welcher dargestellt wurde welcher Wissenschaftsbereich, also z.B. Naturwissenschaften oder Geisteswissenschaften, am meisten mit anderen kooperiert. Hier ist das Ergebnis für den Wissenschaftsbereich der Geisteswissenschaften: 
+
+```{r df}
+df <- read_rds("/Users/carenortgies/Desktop/Praktikum DZHW/Daten Netzwerkanalyse/edges.rds") %>%
+print(df)
+unique(df$from)
+
+df <- df%>% 
+  mutate(from_wissenschaftsbereich = case_when(
+    from %in% c("Alte Kulturen", "Erziehungswissenschaft", "Geschichtswissenschaften", "Literaturwissenschaft", "Medienwissenschaften", "Philosophie", "Psychologie", "Rechtswissenschaften", "Sozialwissenschaften", "Sprachwissenschaften", "Theologie", "Wirtschaftswissenschaften") ~ "Geistes- und Sozialwissenschaten",
+    from %in% c("Agrar-, Forstwissenschaften und Tiermedizin", "Grundlagen der Biologie und Medizin", "Medizin", "Mikrobiologie, Virologie und Immunologie", "Neurowissenschaften", "Pflanzenwissenschaften", "Zoologie") ~ "Lebenswissenschaften",
+    from %in% c("Analytik/Methodenentwicklung (Chemie)", "Astrophysik und Astronomie" , "Atmosphären-, Meeres- und Klimaforschung" ,"Biologische Chemie und Lebensmittelchemie", "Chemische Festkörper- und Oberflächenforschung","Geochemie, Mineralogie und Kristallographie", "Geographie", "Geologie und Paläontologie", "Geophysik und Geodäsie", "Mathematik", "Molekülchemie", "Optik, Quantenoptik und Physik\nder Atome, Moleküle und Plasmen", "Physik der kondensierten Materie", "Physikalische und Theoretische Chemie", "Polymerforschung", "Statistische Physik, Weiche Materie,\nBiologische Physik, Nichtlineare Dynamik", "Teilchen, Kerne und Felder", "Wasserforschung") ~ "Naturwissenschaften",
+    from %in% c("Bauwesen und Architektur", "Elektrotechnik\nund Informationstechnik" , "Informatik", "Materialwissenschaft", "Mechanik und Konstruktiver Maschinenbau", "Produktionstechnik", "Systemtechnik", "Verfahrenstechnik, Technische Chemie", "Werkstofftechnik", "Wärmeenergietechnik, Thermische Maschinen,\nStrömungsmechanik") ~ "Ingenieurswissenschaften",
+    TRUE ~ "other"
+  ))
+```
+
+Da diese nicht so Erkenntnisreich war wie erhofft, sollte ich in einem dritten Schritt eine Netzwerkanalyse der einzelnen Fachgebiete machen. Die Fachgebiete ist eine Einteilung, die sich eine Einteilung unter dem Wissenschaftsbereich befindet. Diese Netzwerkanalyse war also detaillierter, da es mehr Fachgebiete als Wissenschaftsbereiche gibt. 
+
 ## Betreuung im Praktikum
 ## Reflexion des Praktikums 
 
